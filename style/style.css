@@ -3,7 +3,7 @@
 :root {
     /* ### Primary */
 
-    --Blue: hsl(223, 87%, 63%);
+    --Blue: rgb(79, 125, 243);
 
     /* ### Secondary */
 
@@ -88,6 +88,14 @@ body {
     font-family: inherit;
     margin-top: 10px;
     box-shadow: 2px 8px 12px hsl(223, 100%, 88%);
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.form-control button:hover {
+    background-color: rgba(79, 125, 243, 0.826);
+    color: white;
+    box-shadow: 1px 10px 10px hsl(223, 100%, 88%);
 }
 
 .illustration {
@@ -107,18 +115,27 @@ footer ul {
     align-items: center;
     justify-content: center;
     list-style: none;
+    width: 100%;
 }
 
 footer ul li {
-    margin: 0px 8px;
-    border-radius: 50%;
-    border: 1px solid var(--Pale-Blue);
-    padding: 7px 11px;
-    text-align: center;
+    margin: 0px 6px;
 }
 
-footer ul li a i {
+footer ul li a{
     color: var(--Blue);
+    padding: 9px 12px;
+    border-radius: 50%;
+    border: 1px solid var(--Pale-Blue);
+    text-align: center;
+    transition: .4s;
+}
+
+footer ul li a:hover {
+    background-color: var(--Blue);
+    color: white;
+    border: none;
+    
 }
 
 footer p {
@@ -126,3 +143,4 @@ footer p {
     margin-top: 40px;
     font-size: 14px;
 }
+

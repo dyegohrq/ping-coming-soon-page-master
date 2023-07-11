@@ -94,6 +94,7 @@ body {
     display: block;
     max-width: 375px;
     margin-top: 80px;
+    margin-bottom: 100px;
 }
 
 .illustration img {
@@ -101,3 +102,27 @@ body {
     height: 100%;
 }
 
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+footer ul li {
+    margin: 0px 8px;
+    border-radius: 50%;
+    border: 1px solid var(--Pale-Blue);
+    padding: 7px 11px;
+    text-align: center;
+}
+
+footer ul li a i {
+    color: var(--Blue);
+}
+
+footer p {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+}

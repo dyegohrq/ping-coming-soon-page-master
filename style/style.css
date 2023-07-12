@@ -110,6 +110,10 @@ body {
     height: 100%;
 }
 
+.form-control small {
+    display: none;
+}
+
 footer ul {
     display: flex;
     align-items: center;
@@ -144,3 +148,20 @@ footer p {
     font-size: 14px;
 }
 
+.form-control.success input{
+    border-color: rgb(2, 213, 2);
+}
+
+.form-control.erro small{
+    display: block;
+    font-size: 13px;
+    color: var(--Light-Red);
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.form-control.erro input {
+    border-color: var(--Light-Red);
+}

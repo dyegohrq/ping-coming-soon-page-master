@@ -29,11 +29,12 @@ body {
     font-family: var(--font);
     width: 100vw;
     height: 100%;
+    transition: ease 1s;
 }
 
 .container {
     display: flex;
-    max-width: 750px;
+    min-width: 375px;
     height: 100%;
     flex-direction: column;
     align-items: center;
@@ -71,11 +72,33 @@ body {
     height: 50px;
     border-radius: 60px;
     border: 2px solid var(--Pale-Blue);
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .form-control input::placeholder {
     color: var(--Pale-Blue);
+}
+
+.form-control small {
+    display: none;
+}
+
+.form-control.success input{
+    border-color: rgb(2, 213, 2);
+}
+
+.form-control.erro small{
+    display: block;
+    font-size: 11px;
+    color: var(--Light-Red);
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.form-control.erro input {
+    border-color: var(--Light-Red);
 }
 
 .form-control button {
@@ -110,10 +133,6 @@ body {
     height: 100%;
 }
 
-.form-control small {
-    display: none;
-}
-
 footer ul {
     display: flex;
     align-items: center;
@@ -122,17 +141,22 @@ footer ul {
     width: 100%;
 }
 
-footer ul li {
+footer ul li{
     margin: 0px 6px;
 }
 
 footer ul li a{
-    color: var(--Blue);
-    padding: 9px 14px;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 13px;
     border-radius: 50%;
     border: 1px solid var(--Pale-Blue);
+    color: var(--Blue);
     text-align: center;
     transition: .4s;
+    justify-content: center;
+    align-items: center;
 }
 
 footer ul li a:hover {
@@ -148,37 +172,33 @@ footer p {
     font-size: 14px;
 }
 
-.form-control.success input{
-    border-color: rgb(2, 213, 2);
-}
-
-.form-control.erro small{
-    display: block;
-    font-size: 13px;
-    color: var(--Light-Red);
-    text-align: center;
-    margin-top: 8px;
-    margin-bottom: 20px;
-    font-style: italic;
-}
-
-.form-control.erro input {
-    border-color: var(--Light-Red);
-}
-
 @media only screen and (min-width: 750px) {
+
     .container {
         min-width: 750px;
         height: 100%;       
     }
 
+    .container h1 {
+        display: flex;
+        margin: 30px auto 30px auto;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container h1 img{
+        width: 75px;
+    }
+
     .container h2{
-        font-size: 50px;
+        font-size: 32px;
     }
 
     .container p {
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 300;
+        margin: 10px auto 28px auto;        
     }
 
     #form{
@@ -187,23 +207,30 @@ footer p {
 
     .form-control {
         display: flex;
+        max-width: 750px;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
         position: relative;
+        margin: auto;
     }
 
     .form-control input {
         display: block;
-        width: 370px;
-        height: 54px;
-        margin-right: 20px;
-        font-size: 15px;
+        width: 300px;
+        height: 43px;
+        margin-right: 10px;
+        font-size: 12px;
     }
     
     .form-control button {
-        width: 200px;
-        height: 54px;
+        display: flex;
+        width: 130px;
+        height: 43px;
+        font-size: 11px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     
     .form-control.erro small{
@@ -212,14 +239,20 @@ footer p {
         margin-top: 8px;
         margin-bottom: 20px;
         position: absolute;
-        bottom: -60%;
-        left: 15%;
+        bottom: -65%;
+        left: 24%;
     }
     
     .illustration {
         display: block;
-        min-width: 600px;
-        margin-top: 80px;
-        margin-bottom: 150px;
+        min-width: 530px;
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+
+    footer p {
+        text-align: center;
+        margin-top: 13px;
+        font-size: 12px;
     }
 }

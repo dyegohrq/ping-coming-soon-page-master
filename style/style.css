@@ -157,6 +157,7 @@ footer ul li a{
     transition: .4s;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 footer ul li a:hover {

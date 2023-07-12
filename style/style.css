@@ -102,7 +102,7 @@ body {
     display: block;
     max-width: 375px;
     margin-top: 80px;
-    margin-bottom: 130px;
+    margin-bottom: 150px;
 }
 
 .illustration img {
@@ -140,7 +140,7 @@ footer ul li a:hover {
 
 footer p {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 14px;
 }
 

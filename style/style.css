@@ -58,7 +58,7 @@ body {
     margin: 20px auto 35px auto;
     font-weight: 600;
     font-size: 16px;
-    color: rgb(118, 117, 117);
+    color: var(--Very-Dark-Blue);
 }
 
 #form {
@@ -164,4 +164,62 @@ footer p {
 
 .form-control.erro input {
     border-color: var(--Light-Red);
+}
+
+@media only screen and (min-width: 750px) {
+    .container {
+        min-width: 750px;
+        height: 100%;       
+    }
+
+    .container h2{
+        font-size: 50px;
+    }
+
+    .container p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    #form{
+        width: 100%;
+    }
+
+    .form-control {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .form-control input {
+        display: block;
+        width: 370px;
+        height: 54px;
+        margin-right: 20px;
+        font-size: 15px;
+    }
+    
+    .form-control button {
+        width: 200px;
+        height: 54px;
+    }
+    
+    .form-control.erro small{
+        display: flex;
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        position: absolute;
+        bottom: -60%;
+        left: 15%;
+    }
+    
+    .illustration {
+        display: block;
+        min-width: 600px;
+        margin-top: 80px;
+        margin-bottom: 150px;
+    }
 }
